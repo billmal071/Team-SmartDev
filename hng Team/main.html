@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="animate.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/4c591e2ffe.js"></script>
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="img-1">
+        <img src="1.png" alt="" width="500px" height="200px">
+    </div>
+
+    <div class="box-1 w3-center">
+        <div class="img-2  w3-margin-top w3-margin-bottom">
+            <img src="2.png" alt="" width="150px" height="100px">
+        </div>
+
+        <div id="myBut" class="w3-margin-bottom but-2">
+            <button class="w3-bar-item w3-button w3-text-white active btn" onclick="showTab('Login')">Log in</button>
+            <button class="w3-bar-item w3-button w3-text-white btn" onclick="showTab('Signup')">Sign Up</button>
+        </div>
+
+        <div id="Login" class="sign">
+            <div class="inputBox">
+                <input type="text" placeholder="Email Or Username" id="user" required>
+                <label for="user"><i class="fas fa-user w3-text-white"></i></label>
+            </div>
+            <div class="inputBox">
+                <label for="password"><i class="fas fa-key w3-text-white"></i></label>
+                <input type="password" placeholder="Password" id="password" required>
+            </div>
+            <p class="w3-text-white rem"><input type="checkbox" class="w3-margin-right">Remember Me</p>
+            <p><input type="submit" value="LOGIN" class="but w3-button w3-purple"></p>
+            <a href="" class="w3-text-white">Forgot Password?</a>
+        </div>
+
+        <div id="Signup" class="sign" style="display:none">
+            <div class="inputBox">
+                <input type="text" placeholder="Email Or Username" id="user" required>
+                <label for="user"><i class="fas fa-user w3-text-white"></i></label>
+            </div>
+            <div class="inputBox">
+                <label for="password"><i class="fas fa-key w3-text-white"></i></label>
+                <input type="password" placeholder="Enter Password" id="password" required>
+            </div>
+            <div class="inputBox">
+                <label for="password"><i class="fas fa-key w3-text-white"></i></label>
+                <input type="password" placeholder="Confirm Password" id="password" required>
+            </div>
+            <p><input type="submit" value="REGISTER" class="but w3-button w3-purple"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

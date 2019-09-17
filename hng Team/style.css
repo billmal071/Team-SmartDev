@@ -1,0 +1,75 @@
+.img-1 {
+    text-align: center;
+}
+
+.box-1 {
+    background-image: linear-gradient(rgb(44, 0, 146), purple);
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 2%;
+    box-shadow: 8px 8px rgb(51, 51, 51);
+}
+
+.active {
+    background-color: purple;
+    border-radius: 30px;
+    padding: 2px 12px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputBox input {
+    width: 60%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    background: transparent;
+}
+
+.inputBox label {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    padding: 10px 0;
+    color: black;
+    font-size: 20px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+input[type="text"],
+input[type="password"] {
+    text-align: center;
+}
+
+.img-2 {
+    text-align: center;
+}
+
+.word {
+    text-align: center;
+}
+
+.rem {
+    margin-right: 10%;
+}
+
+.but {
+    border-radius: 6px;
+    padding: 10px 50px;
+}
+
+.but-2 {
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
