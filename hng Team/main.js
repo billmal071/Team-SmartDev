@@ -1,24 +1,27 @@
-function showTab(tabName) {
-    var i;
-    var x = document.getElementsByClassName("sign");
+function showTab(evt, tabName) {
+    var i, x, tablinks;;
+    x = document.getElementsByClassName("sign");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
 
     }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
     document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
 
-// Get the container element
-var btnContainer = document.getElementById("myBut");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("btn");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
+function checkPass() {
+    var p1 = document.getElementById("pwd").value;
+    var p2 = document.getElementById("cpwd").value;
+    if (p2 !== p1) {
+        document.getElementById("show").innerHTML = "password and confirm password dont match.";
+        document.getElementById("show").classList.add("w3-show");
+        document.getElementById("show").classList.remove("w3-hide");
+    } else {
+        document.getElementById("show").classList.remove("w3-show");
+        document.getElementById("show").classList.add("w3-hide");
+    }
 }
